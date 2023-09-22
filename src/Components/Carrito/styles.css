@@ -1,0 +1,58 @@
+.cart-card-image {
+    width: 35px;
+
+}
+
+.cart-card {
+    border-bottom: groove 0.5px;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    margin-bottom: 15px;
+}
+
+.cart-container-image {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.cart-card-image {
+    border-radius: solid 10px;
+}
+
+.cart-container-text{
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    height: 40;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.cart-card-title{
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.cart-card-text-desc{
+    margin-left: 10px;
+    font-size: smaller;
+}
+
+.ellipsis {
+    white-space: nowrap;         /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden;            /* Oculta el contenido que se desborda del elemento */
+    text-overflow: ellipsis;     /* Muestra puntos suspensivos (...) cuando el texto se desborda */
+    max-width: 200px;            /* Define un ancho máximo para el elemento (ajusta según tus necesidades) */
+  }
+
+.cart-container-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-container-text p{
+    text-align: left;
+}

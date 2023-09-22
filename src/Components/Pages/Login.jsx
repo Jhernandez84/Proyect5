@@ -35,9 +35,8 @@ export const Login = () => {
                 type: types.setUserState,
                 payload: data,
             })
-            console.log(data)
             swal("Usuario Logeado Exitosamente")
-            navigate('/')
+            navigate('/Dashboard')
             // setFormUser(initialUser)
         } catch (error) {
             console.log(error)
@@ -53,20 +52,21 @@ export const Login = () => {
         setFormUser({
             ...formUser, [target.name]: target.value
         })
-        console.log(formUser)
+        // console.log(formUser)
     }
 
     return (
+
+        // Seleccionar si presionó el botón Login o Registrarse, en ese caso, desplegaría otro cuadro de PopUP
         <>
             <form className="container center">
                 <div className="mb-4">
-                    <p className="text-center">Por favor complete sus datos para iniciar sesión o regístrese para tener una cuenta propia</p>
                     <div className="form-input">
                         <label htmlFor="exampleInputEmail1" className="form-label">Correo electrónico</label>
                         <input name="email" onChange={getFormChanges} value={formUser.email} type="email" className="form-control" id="inputMail" aria-describedby="emailHelp"></input>
                     </div>
                     <div className="form-input">
-                        <label htmlFor="exampleInputEmail1" className="form-label">Password</label>
+                        <label htmlFor="exampleInputPassword" className="form-label">Password</label>
                         <input name="password" onChange={getFormChanges} value={formUser.password} type="password" className="form-control" id="inputPhone" aria-describedby="emailHelp"></input>
                     </div>
                     {formUser.email && formUser.password ? (

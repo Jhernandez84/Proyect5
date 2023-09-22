@@ -23,7 +23,6 @@ export const HomePage = () => {
         })
         setProducts(response.data.detail)
     }
-    console.log(products)
     return (
         <>
             <div className="container">

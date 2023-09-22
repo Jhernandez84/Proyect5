@@ -3,7 +3,7 @@ import swal from "sweetalert"
 import { useState } from "react"
 
 export const FormContacto = () =>{
-    const camposContacto = {name:'',phone:'',email:'',request:'Reservas'}
+    const camposContacto = {name:'',phone:'',email:'',request:'Compras mayoristas'}
     const [contacto,setContacto] = useState(camposContacto)
 
     const SendData = (e) =>{
@@ -23,33 +23,32 @@ export const FormContacto = () =>{
         <>
         <section className="container-fluid d-flex flex-row justify-content-between">
             <div className="container order-0">
-                <img src="https://img.freepik.com/fotos-premium/foto-vertical-copa-vid-vino-seco-oscuro-sobre-fondo-borroso-luz-restaurante-cafe-interior-plato-acompanamiento-pasta-fusilli-salchicha-plato-blanco-mesa-reservas-restaurante-cerrar_349071-2775.jpg" alt="Imagen-Contacto"/>
+                <img src="https://i.pinimg.com/474x/c6/ae/ce/c6aecee31268074b26053f4987a71107.jpg" alt="Imagen-Contacto"/>
             </div>
 
         <div className="container">
         <form>
         <div className="mb-4">
         
-        <h4>¿Quieres hablar con nosotros o necesitas más información?</h4>
+        <h4>¿Necesitas más información?</h4>
         <p>Por favor completa los datos y te contactaremos a la brevedad</p>
         <div className="form-input">
-        <label htmlFor="exampleInputEmail1" className="form-label">Nombre Completo</label>
-        <input name="name" onChange={getFormValues} value={contacto.name} type="text" className="form-control" id="inputName" aria-describedby="emailHelp" required></input>
+        <label htmlFor="exampleInputName" className="form-label">Nombre Completo</label>
+        <input name="name" onChange={getFormValues} value={contacto.name} type="text" className="form-control" id="inputContactName" aria-describedby="inputName" required></input>
         </div>
         <div className="form-input">
-        <label htmlFor="exampleInputEmail1" className="form-label">Teléfono de contacto</label>
-        <input name="phone" onChange={getFormValues} value={contacto.phone} type="phone" className="form-control" id="inputPhone" aria-describedby="emailHelp"></input>
+        <label htmlFor="exampleInputPhone" className="form-label">Teléfono de contacto</label>
+        <input name="phone" onChange={getFormValues} value={contacto.phone} type="phone" className="form-control" id="inputContactPhone" aria-describedby="inputPhone"></input>
         </div>
         <div className="form-input">
         <label htmlFor="exampleInputEmail1" className="form-label">Correo electrónico</label>
-        <input name="email" onChange={getFormValues} value={contacto.email} type="email" className="form-control" id="inputMail" aria-describedby="emailHelp"></input>
+        <input name="email" onChange={getFormValues} value={contacto.email} type="email" className="form-control" id="inputContactMail" aria-describedby="inputMail"></input>
         </div>
         <div className="form-input">
         <label htmlFor="inputState">¿En que podemos ayudarte?</label>
-            <select name="request" onChange={getFormValues} value={contacto.request} id="inputState" className="form-control">
-            <option selected default>Reservas</option>
-            <option>Eventos Coporativos</option>
-            <option>Clases de Cocina</option>
+            <select selected={contacto.request} name="request" onChange={getFormValues} value={contacto.request} id="inputContactState" className="form-control">
+            <option >Compras mayoristas</option>
+            <option>Importaciones</option>
             <option>Otros</option>
         </select>
         </div>
