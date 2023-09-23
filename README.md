@@ -6,7 +6,7 @@ Este proyecto de E-Commerce utiliza **ReactJS** y **Context API**, es complemtam
 
 También se agregó una página de contacto, la cuál carga un formulario para más información en caso de ser necesario.
 
-[En este link podrás visitar la aplicación funcionando](https://650e5680a171f166b05de8d0--astounding-shortbread-c45c57.netlify.app/HomePage)
+[En este link podrás visitar la aplicación funcionando](https://650e5680a171f166b05de8d0--astounding-shortbread-c45c57.netlify.app)
 
 
 ## Inicio de Sesión. LogIn o Registro
