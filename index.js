@@ -14,7 +14,7 @@ const mongoose = require("mongoose");
 
 mongoose.connect(process.env.MONGO_URI + 'tienda');
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 const corsOptions={
     origin:process.env.FRONTEND_URL,
