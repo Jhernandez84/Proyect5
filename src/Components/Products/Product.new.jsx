@@ -68,7 +68,7 @@ export const ProductNew = () => {
                     </div>
                     <div className="form-input">
                         <label htmlFor="exampleInputEmail1" className="form-label">Categoría</label>
-                        <input name="inputCategory" onChange={getFormProductsChanges} type="text" className="form-control" id="inputCategory" aria-describedby="inputCategory"></input>
+                        <input name="category" onChange={getFormProductsChanges} type="text" className="form-control" id="inputCategory" aria-describedby="inputCategory"></input>
                     </div>
                     <div className="form-input">
                         <label htmlFor="inputStock" className="form-label">Cantidad</label>
