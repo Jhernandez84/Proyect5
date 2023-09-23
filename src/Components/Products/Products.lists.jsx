@@ -90,7 +90,7 @@ export const ProductAdmin = ({ Product }) => {
 
     const EliminaProducto = async (id) => {
         try {
-            const { data } = await axios.delete("http://localhost:4000/Productos", {
+            const { data } = await axios.delete("https://backend-proyect5.onrender.com/productos", {
                 data: {
                     "_id": id
                 },
@@ -127,7 +127,7 @@ export const ProductAdmin = ({ Product }) => {
         // console.log(CtdStock)
         if (CtdStockOriginal != CtdStock) {
             try {
-                const { data } = await axios.put("http://localhost:4000/Productos", {
+                const { data } = await axios.put("https://backend-proyect5.onrender.com/productos", {
                     "_id": Id,
                     "ProductUpdated": {
                         "stock": CtdStock

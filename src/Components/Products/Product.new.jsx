@@ -29,7 +29,7 @@ export const ProductNew = () => {
             // En esta seccion vamos a validar si existe o no en una cadena de conexión.
             // En esta seccion vamos a validar si existe o no en una cadena de conexión.
             // const {data} = await axios.post("https://backendproyect5.onrender.com/users", formUser, {
-            const { data } = await axios.post('http://localhost:4000/Productos', newProduct, {
+            const { data } = await axios.post('https://backend-proyect5.onrender.com/productos', newProduct, {
                 headers: {
                     "Context-Type": "application/json"
                 }

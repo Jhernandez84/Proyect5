@@ -20,7 +20,7 @@ export const ProductDetails = () => {
     }, []);
 
     const getProductDetail = async (_id) => {
-        const response = await axios.get(`http://localhost:4000/Productos/${_id}`, {
+        const response = await axios.get(`https://backend-proyect5.onrender.com/productos/${_id}`, {
             // // const {data} = await axios.post("https://backendproyect5.onrender.com/users/login", user, {
             headers: {
                 "Context-Type": "application/json"
